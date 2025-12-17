@@ -157,7 +157,7 @@ This file can be used for web applications, dashboards, or reporting.
 Want to try a different approach than tradition CNN and also, where a CNN require 100s of images per student for training, our system just require 10-15 images per student and also dont require model training so easily scalable.
 
 ## 📌 Team Members
-- **Atharv Halwai** (Myself) — [LinkedIn Profile]((https://www.linkedin.com/in/atharv-halwai-15393630a/))
+- **Atharv Halwai** (Myself) — [LinkedIn Profile](https://www.linkedin.com/in/atharv-halwai-6a2022359/)
 - **Shreejeet Gaikwad**
 - **Varun Kulkarni**
 - **Aryan Chougule**

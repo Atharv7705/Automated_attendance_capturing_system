@@ -1,14 +1,18 @@
 🚀 RAR-Based Automated Attendance System
+
 An AI-powered attendance system built using Retrieval-Augmented Recognition (RAR), MTCNN for face detection, and ArcFace for vector-based face verification.
 Instead of traditional CNN-based classification, this system uses vector similarity retrieval, making the process faster, more scalable, and more accurate.
 
 IF you want to implement this, below I have provided each and every step with explanation. A new beginner can also understand the flow just read it slowly and patiently.
+
 📌 Project Overview
+
 This system captures frames, detects faces, generates embeddings, retrieves the closest match from a stored database, and automatically records attendance in a CSV file.
 
 Using the concept of RAR (Retrieval-Augmented Recognition), the system identifies individuals based on vector proximity—similar to RAG in NLP but adapted for computer vision.
 
 🧠 How It Works
+
 Face Detection (MTCNN)
 Detects faces from images or video frames.
 
@@ -25,41 +29,65 @@ CSV Output
 Contains student ID, status, and timestamp.
 
 📁 Project Structure
+
 your-project/
+
 │── raw_dataset/         # student images (15–20 images per person)
+
 │── embeddings.pkl or student_embeddings.pkl in my repsotiory   # stored ArcFace embeddings (auto-generated)
+
 │── working/attendance.csv       # attendance logs
+
 |── camera_test.py and camera_test2.py  # Checks the camera is working ok.
+
 │── temp_faces/    # Stores face captured from the MTCNN for visual representation
+
 │── README.md
+
 |── face_embd.py  # run this file once, converts the raw dataset to embeddings dataset
+
 │── requirements.txt # create a python or conda virtual environment and then install the requirements 
+
 └── main.py   # after all steup run this file in the virtual environment that has the dependences installed
+
 🛠 Technologies Used
+
 MTCNN – Face detection
+
 ArcFace (ONNX) – Embedding generation
+
 Cosine Similarity – Identity matching
+
 RAR – Retrieval-Augmented Recognition
+
 Python, NumPy, Pandas, OpenCV
+
 CSV Logging
+
 📖 How to Implement This For Your Use
 Follow these steps to set up and run the system for your own use case.
 
 1️⃣ Download or Clone the Repository
 git clone https://github.com/AryanChougule/Automated-Attendance-Capturing-System-using-RAR
 cd <your-project-folder>
+
 2️⃣ Install Dependencies
 First create a virtual environment and install the dependences (This dependences are for python version 3.10) See if they work for your python version.
 
 pip install -r requirements.txt
+
 3️⃣ Prepare Your Raw Dataset
 Inside raw_dataset/, create subfolders named by student IDs:
 
 raw_dataset/
 │── 101/images of that student
+
 │── 102/
+
 │── 103/
+
 │── ...
+
 Each folder should contain 15–20 images of the same person.
 
 4️⃣ Generate Embeddings
@@ -86,25 +114,36 @@ Attendance updates
 You will see this file in the working folder Example:
 
 attendance.csv
+
 StudentID,Status,Timestamp
+
 101,Present,2025-01-12 09:13:27
+
 102,Present,2025-01-12 09:14:03
+
 This file can be used for web applications, dashboards, or reporting.
 
 📌 Motivation
+
 Want to try a different approach than tradition CNN and also, where a CNN require 100s of images per student for training, our system just require 10-15 images per student and also dont require model training so easily scalable.
 
 📌 Team Members
+
 Atharv Halwai (Myself) — LinkedIn Profile
 Shreejeet Gaikwad
 Varun Kulkarni
 Aryan Chougule Contact any one of use for any problem
+
 📌 Demo Video / Screenshots
+
 You can find Demo and Screenshots on my linkedin porject post.
 
 📌 Achivements
+
 Got seed funded from Rajarambapu Institute of Technology, Islampur to implement this system in classrooms.
 
 🎯 Conclusion
+
 This project demonstrates how Retrieval-Augmented Recognition can be applied to real-world face identification and attendance automation.
+
 By combining MTCNN, ArcFace, and vector similarity search, the system achieves high accuracy, scalability, and robustness.

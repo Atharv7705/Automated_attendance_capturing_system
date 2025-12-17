@@ -95,10 +95,10 @@ This file can be used for web applications, dashboards, or reporting.
 Want to try a different approach than tradition CNN and also, where a CNN require 100s of images per student for training, our system just require 10-15 images per student and also dont require model training so easily scalable.
 
 📌 Team Members
-Aryan Chougule (Myself) — LinkedIn Profile
+Atharv Halwai (Myself) — LinkedIn Profile
 Shreejeet Gaikwad
 Varun Kulkarni
-Atharv Halwai Contact any one of use for any problem
+Aryan Chougule Contact any one of use for any problem
 📌 Demo Video / Screenshots
 You can find Demo and Screenshots on my linkedin porject post.
 
